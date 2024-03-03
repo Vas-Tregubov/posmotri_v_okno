@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -35,4 +37,128 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  align-self: center;
+  align-items: flex-end;
+}
+
+.result {
+  max-width: 711px;
+  width: 100%;
+}
+
+.content__details {
+  width: 399px;
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__list {
+  overflow: scroll;
+  height: 298px;
+  margin-block-start: 26px;
+  position: relative;
+}
+
+.result__video-container {
+  margin-block-end: 16px;
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+}
+
+.result__video {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.content__list-item {
+  margin-block-end: 32px;
+}
+
+.content__list-item:last-of-type {
+  margin-block-end: 0;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  max-width: 194px;
+  max-height: 103px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.title, .content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 75px;
+  line-height: 71px;
+}
+
+.content__video-card-title {
+  font-size: 30px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__video-card-title, .content__video-card-description {
+  color: #fff;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  border: 0;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
 }
