@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -57,7 +57,7 @@ ol {
 }
 
 .button:hover {
-  text-decoration-line:underline;
+  text-decoration-line: underline;
 }
 
 .button:active {
@@ -67,7 +67,7 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
-  padding: 2px;
+  outline-offset: 2px;
 }
 
 .more-button {
@@ -140,13 +140,15 @@ ol {
   max-height: 103px;
   object-fit: contain;
   object-position: center;
+  margin-left: 5px;
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
 }
 
-.title, .content__video-card-title {
+.title,
+.content__video-card-title {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,18 +167,45 @@ ol {
   color: #545050;
 }
 
-.content__video-card-title, .content__video-card-description {
+.content__video-card-title,
+.content__video-card-description {
   color: #fff;
 }
 
 .content__card-link {
   text-decoration: none;
+  display: block;
+  appearance: none;
+  outline: none;
+  padding: 2px;
+}
+
+.content__card-link:hover .content__video-card-title {
+  text-decoration-line: underline;
+}
+
+.content__card-link:hover .content__video-card-description {
+  text-decoration-line: underline;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:focus-visible {
+  border: 1px solid #fff;
+  padding: 2px;
 }
 
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
+}
+
+.content__video-card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -235,12 +264,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  padding: 1px;
-}
-
-.search-form__label:has(:active) {
-  outline: 1px solid #fff;
-  box-sizing: border-box;
+  outline-offset: 2px;
 }
 
 .search-form__checkbox-list {
