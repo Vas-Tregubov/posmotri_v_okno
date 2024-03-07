@@ -78,7 +78,6 @@ ol {
 
 .search-form__submit-button {
   min-width: 194px;
-  height: fit-content;
   align-self: flex-end;
 }
 
@@ -109,12 +108,12 @@ ol {
 .content__list {
   overflow: auto;
   height: 298px;
-  margin-block-start: 26px;
+  margin-block-start: 18px;
   position: relative;
 }
 
 .result__video-container {
-  margin-block-end: 16px;
+  margin-block-end: 18px;
   object-fit: cover;
   object-position: center;
   position: relative;
@@ -150,6 +149,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .title {
@@ -157,7 +157,8 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 75px;
-  line-height: 0.9;
+  line-height: .94;
+  padding-bottom: 5px;
 }
 
 .content__video-card-title {
@@ -168,7 +169,7 @@ ol {
   text-overflow: ellipsis;
   font-size: 30px;
   white-space: nowrap;
-  max-width: 200px;
+  max-width: 183px;
   color: #fff;
   line-height: 1;
   margin-bottom: 5px;
